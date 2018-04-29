@@ -1,0 +1,28 @@
+.detail {
+  grid-area: detail;
+  border: 1px solid var(--dark-color);
+  background-color: var(--light-color);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  overflow-y: scroll;
+  /* min-height: 100%; */
+  
+}
+
+.noteTitle, .noteBody {
+  text-align: center;
+  font-size: 2em;
+}
+
+.detail a {
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+}

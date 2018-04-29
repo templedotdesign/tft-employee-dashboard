@@ -1,0 +1,144 @@
+.dashboard {
+  color: var(--primary-color);
+  background-color: #dbd1b4;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 10px 20% 30% 1fr 10px;
+  grid-template-rows: 10px 50px 175px repeat(2, 1fr) 10px;
+  height: 100vh;
+  grid-template-areas: 
+  ". .       .                .      ."
+  ". welcome supplierControls logo   ."
+  ". welcome supplierMaster   detail ."
+  ". links   supplierMaster   detail ."
+  ". links   notesMaster      detail ."
+  ". .       .                .      .";
+  overflow: hidden;
+}
+
+.dashboard hr {
+  border-color: var(--primary-color);
+}
+
+.welcome {
+  grid-area: welcome;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.welcome img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.links {
+  grid-area: links;
+  background-color: var(--primary-color);
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links a {
+  color: var(--light-color);
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+} 
+
+.supplierControls {
+  grid-area: supplierControls;
+  border: 1px solid var(--dark-color);
+  background-color: var(--light-color);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search span {
+  padding-right: 5px;
+}
+
+.supplierControls p, span {
+  font-size: 2.1rem;
+  color: var(--primary-color);
+}
+
+.supplierControls input {
+  height: 40px;
+}
+
+.supplierMaster {
+  grid-area: supplierMaster;
+  border: 1px solid var(--dark-color);
+  background-color: var(--light-color);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  overflow-y: scroll;
+}
+
+.supplierMasterItem {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.notesMaster {
+  grid-area: notesMaster;
+  border: 1px solid var(--dark-color);
+  background-color: var(--light-color);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  overflow-y: scroll;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.detail {
+  grid-area: detail;
+  border: 1px solid var(--dark-color);
+  background-color: var(--light-color);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+
+
+
+
+
+
+
+
+

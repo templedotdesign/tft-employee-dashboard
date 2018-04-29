@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
-html {
+:root {
   box-sizing: border-box;
+  --primary-color: steelblue;
+  --dark-color: rgb(51,51,51);
+  --light-color: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, .8); 
 }
 
 *, *::after, *::before {
